@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Vulnerability Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cyber-terminal">
+        <div class="header">
+            <h1>🔓 PASSWORD VULNERABILITY SCANNER</h1>
+            <p>SYSTEM: INITIALIZING CYBERSECURITY PROTOCOLS</p>
+        </div>
+
+        <div class="input-group">
+            <input type="password" id="passwordInput" placeholder="ВВЕДИТЕ ПАРОЛЬ ДЛЯ АНАЛИЗА БЕЗОПАСНОСТИ...">
+        </div>
+
+        <div class="hacking-animation" id="hackingAnimation">
+            <div class="matrix-code" id="matrixCode"></div>
+        </div>
+
+        <div class="hacking-progress" id="hackingProgress">
+            <div class="hacking-progress-bar" id="hackingProgressBar"></div>
+        </div>
+
+        <div class="status-message" id="statusMessage">
+            СИСТЕМА ГОТОВА К АНАЛИЗУ
+        </div>
+
+        <div class="results" id="results">
+            <div class="strength-section">
+                <h3>⚡ МОЩНОСТЬ ПАРОЛЯ</h3>
+                <div class="strength-meter">
+                    <div class="strength-fill" id="strengthFill"></div>
+                </div>
+                <div id="strengthText">ОЦЕНКА: НЕИЗВЕСТНО</div>
+            </div>
+
+            <div class="time-section">
+                <h3>⏰ ВРЕМЯ ВЗЛОМА</h3>
+                <div class="time-display" id="timeDisplay">РАСЧЕТ...</div>
+                <div id="crackMethod">МЕТОД: БРУТФОРС АТАКА</div>
+            </div>
+
+            <div class="vulnerabilities-section">
+                <h3>🔍 УЯЗВИМОСТИ</h3>
+                <div id="vulnerabilitiesList"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
